@@ -58,10 +58,9 @@ export default function App() {
 					}
 				>
 					<Text
-						style={{
-							color: '#77D777',
-
-						}}
+					style={
+						styles.textoBotao
+					}
 					>
 						Acessar
 					</Text>
@@ -73,9 +72,9 @@ export default function App() {
 					}
 				>
 					<Text
-						style={{
-							color: '#FF6961',
-						}}
+						style={
+							styles.textoBotao
+						}
 					>
 						Cadastrar-se
 					</Text>
@@ -104,31 +103,37 @@ const styles = StyleSheet.create({
 	},
 
 	input: {
-		borderBottomColor: '#000',
-		borderBottomWidth: 0.3
+		borderColor: '#000',
+		borderRadius: 50,
+		borderWidth: 0.3,
+		marginBottom: 15,
+		paddingLeft: 10,
 	},
 
 	botaoAcessar: {
-		marginLeft: '25%',
-		width: '50%',
-		borderColor: '#77D777',
-		borderWidth: 1,
-		borderRadius: 4,
+		marginLeft: '20%',
+		width: '60%',
+		backgroundColor: '#77D777',
+		borderRadius: 50,
 		alignItems: "center",
 		justifyContent: "center",
-		height: 30,
+		height: 40,
 		marginTop: 30
 	},
 
 	botaoCadastrar: {
-		marginLeft: '25%',
-		width: '50%',
-		borderColor: '#FF6961',
-		borderWidth: 1,
-		borderRadius: 4,
+		marginLeft: '20%',
+		width: '60%',
+		backgroundColor: '#FF6961',
+		borderRadius: 50,
 		alignItems: "center",
 		justifyContent: "center",
-		height: 30,
+		height: 40,
 		marginTop: 10
+	},
+
+	textoBotao: {
+		color: '#fff',
+		fontWeight: "bold"
 	}
 });
