@@ -6,7 +6,7 @@ import {
 	TouchableOpacity,
 	Text,
 	Image,
-	StyleSheet
+	StyleSheet,
 } from 'react-native';
 
 export default function App() {
@@ -16,6 +16,7 @@ export default function App() {
 				styles.background
 			}
 		>
+
 			<View
 				style={
 					styles.containerLogo
@@ -31,6 +32,9 @@ export default function App() {
 			<View style={styles.container}>
 
 				<TextInput
+					style={
+						styles.input
+					}
 					placeholder="Login"
 					autoCorrect={false}
 					onChangeText={() => { }}
@@ -38,6 +42,9 @@ export default function App() {
 				</TextInput>
 
 				<TextInput
+					style={
+						styles.input
+					}
 					placeholder="Senha"
 					autoCorrect={false}
 					onChangeText={() => { }}
@@ -45,22 +52,31 @@ export default function App() {
 				</TextInput>
 
 				<TouchableOpacity
-					
-					style = {
+
+					style={
 						styles.botaoAcessar
 					}
 				>
-					<Text>
+					<Text
+						style={{
+							color: '#77D777',
+
+						}}
+					>
 						Acessar
 					</Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style = {
+					style={
 						styles.botaoCadastrar
 					}
 				>
-					<Text>
+					<Text
+						style={{
+							color: '#FF6961',
+						}}
+					>
 						Cadastrar-se
 					</Text>
 				</TouchableOpacity>
@@ -87,21 +103,28 @@ const styles = StyleSheet.create({
 		width: '70%',
 	},
 
+	input: {
+		borderBottomColor: '#000',
+		borderBottomWidth: 0.3
+	},
+
 	botaoAcessar: {
 		marginLeft: '25%',
 		width: '50%',
-		backgroundColor: '#77DD77',
+		borderColor: '#77D777',
+		borderWidth: 1,
 		borderRadius: 4,
 		alignItems: "center",
 		justifyContent: "center",
 		height: 30,
-		marginTop: 10
+		marginTop: 30
 	},
 
 	botaoCadastrar: {
 		marginLeft: '25%',
 		width: '50%',
-		backgroundColor: '#FF6961',
+		borderColor: '#FF6961',
+		borderWidth: 1,
 		borderRadius: 4,
 		alignItems: "center",
 		justifyContent: "center",
