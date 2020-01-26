@@ -2,4 +2,4 @@
 Esse é um projeto de uma telinha básica em React Native, feito para estudo da ferramenta, tem apenas a parte do front-end
 
 ### Como está:
-<img src="./App/src/assets/print.jpg"/>
+<img src="./App/src/assets/print.jpg" width="50%"/>
